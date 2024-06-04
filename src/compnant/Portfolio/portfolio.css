@@ -1,0 +1,117 @@
+
+
+
+.containerProj{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+.containerProj h1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.containerProj .carts{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.containerProj .carts .cart{
+    text-align: center;
+    width: 30%;
+    height: 250px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+
+    bottom: 0;
+    left: 0;
+
+   
+    box-shadow: 0 0 1rem var(--bg-color);
+    
+}
+
+.containerProj .carts .cart:hover .textCart{
+    height: 100%;
+}
+.containerProj .carts .cart:hover img{
+    transform: scale(1.1);
+
+}
+
+.containerProj .carts .cart img{
+    width: 100%;
+    animation: none;
+    height: 100%;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+.containerProj .carts .cart .textCart{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    background-image:linear-gradient(to top, var(--main-color) 15%,transparent );
+    transition: 3s;
+
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+
+
+}
+
+
+.containerProj .carts .cart .textCart h3{
+    color: #fff;
+    font-size: 35px;
+    background: transparent;
+}
+ .containerProj .carts .cart .textCart p{
+    font-size: 22px;
+    color: #fff;
+    background: transparent;
+    width: 80%;
+
+ }
+
+ @media (max-width : 1300px){
+    .containerProj .carts .cart{
+        width: 40%;
+    }
+    .containerProj .carts {
+        padding-bottom: 100px;
+    }
+}
+
+
+ @media (max-width : 1000px){
+    .containerProj .carts .cart{
+        width: 60%;
+    }
+    
+ }
+
+ @media (max-width : 500px){
+    .containerProj .carts .cart{
+        width: 100%;
+    }
+ }

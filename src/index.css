@@ -1,0 +1,122 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+html{
+  /* overflow: hidden; */
+}
+
+:root{
+  --bg-color:#1f242d;
+  --second-bg-color:#323946;
+  --text-color:#fff;
+  --main-color:#0ef;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+  /* margin-top: 20px; */
+  /* margin-bottom: 50px; */
+
+}
+
+
+
+
+
+.container h1{
+  color: var(--text-color);
+  font-size: 3rem;
+}
+
+ span{
+  color: var(--main-color);
+
+}
+
+
+
+.btn{
+  color:var(--bg-color) ;
+  background-color: var(--main-color);
+  width: 10rem;
+  height: 2.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  transition: .5s;
+
+}
+
+.btn:hover{
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
+
+  
+}
+
+
+.icons li a{
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  border-radius: 40%;
+  transition: .5s;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  padding: 7px;
+}
+.icons li a:hover{
+  color: var(--bg-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
+
+}
+
+.left-section ul,
+.buttom-section .icons{
+    color: var(--main-color);
+    font-size: 2rem;
+    gap: 20px;
+
+
+
+}
+
+.icon{
+  color: var(--main-color);
+  
+}
+
+
+
+.flex{
+  display: flex;
+}
+
+.border{
+  border: 2px solid red;
+}
+
+/* animation */
+@keyframes moveUpDown {
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-20px);
+  }
+  100%{
+      transform: translateY(-0);
+  }
+}

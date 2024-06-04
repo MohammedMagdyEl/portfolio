@@ -1,0 +1,110 @@
+
+
+.parentContant{
+    width: 80%;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 40px; */
+    padding-bottom: 100px;
+    margin: auto;
+
+}
+.parentContant h1{
+    text-align: center;
+}
+
+
+.parentContant form {
+    width: 80%;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+
+}
+.parentContant form div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.parentContant form div  input {
+    width: 48%;
+    height: 60px;
+    background-color: var(  --second-bg-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.parentContant form  textarea{
+    height: 40px;
+    width: 350px;
+    background-color: var(  --second-bg-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.parentContant form  .textarea{
+    text-align: center;
+
+}
+
+.parentContant form  .textarea textarea{
+    height: 350px;
+    width: 100%;
+}
+
+@media (max-width : 450px) {
+    .parentContant form  .textarea textarea{
+        height: 200px;
+    }    
+}
+
+
+
+    
+@media (max-width : 850px) {
+    .parentContant{
+        margin-bottom: 300px;
+    }
+  
+    .parentContant form{
+        width: 100%;
+
+    }
+
+
+    .parentContant form div  input{
+        width: 100%;
+    }
+
+    .parentContant form div{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+    }
+    .parentContant form  .textarea textarea{
+        height: 300px;
+    }
+}
+
+
+
+
+@media (max-width : 1300px){
+    .parentContant{
+        padding-bottom: 100px;
+    }
+    .parentContant form {
+        width: 100%;
+    }
+}
