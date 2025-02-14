@@ -1,41 +1,44 @@
-header{
+header {
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    height: 100px;
 }
 
-header ul{
+header ul {
     display: flex;
+
 }
 
-header ul li{
+header ul li {
     text-transform: capitalize;
     font-size: 1.3rem;
     margin-left: 15px;
-    list-style: none;
+    /* list-style: none; */
 }
 
-header h2{
+header h2 {
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     font-weight: 900;
     cursor: pointer;
 }
 
-header ul li a{
-    text-decoration: none;
+header ul li a {
+    /* text-decoration: none; */
     color: var(--text-color);
-    
+    transition: all .5s ease-in-out;
+
 }
 
 header ul li a:hover,
-header ul li .active{
-    color: var( --main-color);
+header ul li .active {
+    color: var(--main-color);
 }
 
 
 
-header button.icon-menu{
+header button.icon-menu {
     all: unset;
     display: none;
     color: var(--text-color);
@@ -43,26 +46,27 @@ header button.icon-menu{
 
 }
 
-header .fixed ul.model{
+header .fixed ul.model {
     animation: mymove .7s 1;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
+    /* margin-right: auto; */
     margin-top: 2rem;
     border-radius: 2rem;
     padding: 1rem 2rem;
     background-color: var(--secondary);
 
 }
-header .fixed{
+
+header .fixed {
     position: fixed;
-    inset: 0; 
+    inset: 0;
     z-index: 11;
-    backdrop-filter:blur(8px);
-    
+    backdrop-filter: blur(8px);
+
 }
 
-header .fixed ul.model li:first-child{
+header .fixed ul.model li:first-child {
     text-align: right;
     border: none;
     padding-bottom: 0;
@@ -70,42 +74,60 @@ header .fixed ul.model li:first-child{
     margin-bottom: -1rem;
 }
 
-.btn-close{
-    color:var(--bg-color) ;
+.btn-close {
+    all: unset;
+
+    color: var(--bg-color);
+    text-align: center;
     background-color: var(--main-color);
     width: 3rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
     border-radius: 50%;
     transition: .5s;
+   
+  
 }
 
-.btn-close:hover{
+
+
+.btn-close:hover {
     background-color: var(--bg-color);
     color: var(--main-color);
     box-shadow: 0 0 20px var(--main-color);
-  
-    
-  }
+
+
+}
 
 @keyframes mymove {
-    0%    {scale: 0;}
-    60%   {scale:1.2 ;}
-    100%  {scale: 1;}
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 
 
-@media (max-width:800px) {
-    header button.icon-menu{
+
+
+@media (max-width : 768px) {
+    header button.icon-menu {
         display: block;
     }
-    header ul.nav{
+
+    header ul.nav {
         display: none;
     }
 
-    header ul.model{
+    header ul.model {
         display: block;
         border: 2px solid var(--main-color);
         margin: 10px;
@@ -113,7 +135,9 @@ header .fixed ul.model li:first-child{
     }
 
 
-    header ul.model li{
+    header ul.model li {
         margin-block: 20px;
     }
+
+
 }

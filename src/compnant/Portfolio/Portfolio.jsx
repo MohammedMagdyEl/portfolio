@@ -1,12 +1,11 @@
 import React from "react";
 import "./portfolio.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+
 
 const Portfolio = () => {
   return (
-    <>
-      <div className="containerProj container">
+  
+      <div className="portfolio ">
         <h1>
           Lastest <span> Projects</span>
         </h1>
@@ -91,7 +90,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </>
+ 
 
   );
 };

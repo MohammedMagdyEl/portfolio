@@ -13,10 +13,12 @@ import Footer from './compnant/Footer/Footer';
 function App() {
   return (
     <>
-    <div className="container">
+    <div className="container ">
     {/* <Header/> */}
     <BrowserRouter>
     <Header/>
+    <div className='route'>
+
       <Routes>
         <Route path="/" element = {<Home/>} />
         <Route path="/servies" element = {<Servies/>} />
@@ -26,6 +28,8 @@ function App() {
 
         
       </Routes>
+    </div>
+    
       <Footer/>
     </BrowserRouter>
     </div>

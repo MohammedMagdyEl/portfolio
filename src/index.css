@@ -9,9 +9,7 @@
   
 }
 
-html{
-  /* overflow: hidden; */
-}
+
 
 :root{
   --bg-color:#1f242d;
@@ -23,8 +21,7 @@ html{
 .container{
   width: 90%;
   margin: auto;
-  /* margin-top: 20px; */
-  /* margin-bottom: 50px; */
+  max-width: 1400px;
 
 }
 
@@ -41,6 +38,7 @@ html{
   color: var(--main-color);
 
 }
+
 
 
 

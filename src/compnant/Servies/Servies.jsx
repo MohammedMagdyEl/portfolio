@@ -1,46 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./servies.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+
 
 const Servies = () => {
+  const [carts, setCarts] = useState([{
+    icon: "icon-embed2", name: "Web Development ", disc: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+  asperiores architecto! Aliquam rerum eius hic beatae repudiandae
+  voluptatem. Quidem, fuga?`},
+  {
+    icon: "icon-brush", name: "Graphic Design ", disc: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+  asperiores architecto! Aliquam rerum eius hic beatae repudiandae
+  voluptatem. Quidem, fuga?`},
+  {
+    icon: "icon-signal_cellular_alt", name: "Dodital marketing  ", disc: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+  asperiores architecto! Aliquam rerum eius hic beatae repudiandae
+  voluptatem. Quidem, fuga?`},])
   return (
     <>
-      <div className="containerServ container ">
+      <div className="servies  ">
         <h1>
           Our <span> Services</span>
         </h1>
         <div className="carts">
-          <div className="cart ">
-            <i className="icon-embed2"></i>
-            <h3>Web Development </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              asperiores architecto! Aliquam rerum eius hic beatae repudiandae
-              voluptatem. Quidem, fuga?
-            </p>
-            <button className="btn">Read More</button>
-          </div>
-          <div className="cart">
-            <i className="icon-brush"></i>
-            <h3>Graphic Design </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              asperiores architecto! Aliquam rerum eius hic beatae repudiandae
-              voluptatem. Quidem, fuga?
-            </p>
-            <button className="btn">Read More</button>
-          </div>
-          <div className="cart">
-            <i className="icon-signal_cellular_alt"></i>
-            <h3>Dodital marketing </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              asperiores architecto! Aliquam rerum eius hic beatae repudiandae
-              voluptatem. Quidem, fuga?
-            </p>
-            <button className="btn">Read More</button>
-          </div>
+          {carts.map((item) => (
+            <div key={item.name} className="cart ">
+
+              <i className={item.icon}></i>
+              <h3>{item.name} </h3>
+              <p>
+                {item.disc}
+              </p>
+              <button className="btn">Read More</button>
+            </div>
+          ))}
+
         </div>
       </div>
     </>

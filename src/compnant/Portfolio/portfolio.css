@@ -1,61 +1,59 @@
 
 
 
-.containerProj{
+.portfolio{
     display: flex;
     flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+
     
     }
     
-.containerProj h1{
+.portfolio h1{
     text-align: center;
-    padding-top: 100px;
+
 }
 
-.containerProj .carts{
-    display: flex;
-    margin-top: 50px;
+.portfolio .carts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    flex-wrap: wrap;
+
     
 }
 
-.containerProj .carts .cart{
+.portfolio .carts .cart{
     text-align: center;
-    width: 30%;
-    height: 250px;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-
     bottom: 0;
     left: 0;
-
-   
     box-shadow: 0 0 1rem var(--bg-color);
     
 }
 
-.containerProj .carts .cart:hover .textCart{
+.portfolio .carts .cart:hover .textCart{
     height: 100%;
 }
-.containerProj .carts .cart:hover img{
+.portfolio .carts .cart:hover img{
     transform: scale(1.1);
 
 }
 
-.containerProj .carts .cart img{
+.portfolio .carts .cart img{
     width: 100%;
-    animation: none;
+    /* animation: none; */
     height: 100%;
     border-radius: 30px;
     transition: 0.3s;
 
 }
 
-.containerProj .carts .cart .textCart{
+.portfolio .carts .cart .textCart{
     position: absolute;
     width: 100%;
     height: 0%;
@@ -66,26 +64,25 @@
     align-items: center;
     background: transparent;
     background-image:linear-gradient(to top, var(--main-color) 15%,transparent );
-    transition: 3s;
-
+    transition: 5s;
     bottom: 0;
     left: 0;
-    transition: 0.3s all;
-    -webkit-transition: 0.3s all;
-    -moz-transition: 0.3s all;
-    -ms-transition: 0.3s all;
-    -o-transition: 0.3s all;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
 
 
 }
 
 
-.containerProj .carts .cart .textCart h3{
+.portfolio .carts .cart .textCart h3{
     color: #fff;
     font-size: 35px;
     background: transparent;
 }
- .containerProj .carts .cart .textCart p{
+ .portfolio .carts .cart .textCart p{
     font-size: 22px;
     color: #fff;
     background: transparent;
@@ -93,25 +90,56 @@
 
  }
 
- @media (max-width : 1300px){
-    .containerProj .carts .cart{
-        width: 40%;
+ @media (max-width :1200px ) {
+    .portfolio .carts .cart {
+      
+        gap: 15px;
+       
     }
-    .containerProj .carts {
-        padding-bottom: 100px;
+    .portfolio .carts .cart i {
+        font-size: 2.5rem;
+        font-weight: 900;
+ 
     }
-}
+    .portfolio .carts .cart h3 {
+        font-size: 2rem;
+       
+    }
 
-
- @media (max-width : 1000px){
-    .containerProj .carts .cart{
-        width: 60%;
-    }
+    .portfolio .carts .cart p {
+     
+        font-size: 1.25rem;
+        background-color: var(--second-bg-color);
+        color: #fff;
+        overflow: hidden;
     
- }
-
- @media (max-width : 500px){
-    .containerProj .carts .cart{
-        width: 100%;
     }
- }
+   
+} 
+@media (max-width :992px ) {
+    .portfolio .carts {
+        grid-template-columns: 1fr 1fr ;
+
+    }
+    .portfolio .carts .cart p {
+     
+        font-size: 1rem;
+    
+    }
+
+   
+} 
+
+@media (max-width : 768px){
+    .portfolio h1{
+        font-size: 2rem;
+    
+    }
+    .portfolio .carts {
+        grid-template-columns: 1fr  ;
+
+    }
+   
+
+} 
+
